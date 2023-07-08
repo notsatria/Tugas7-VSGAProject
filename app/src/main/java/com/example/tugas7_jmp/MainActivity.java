@@ -7,6 +7,9 @@ import androidx.cardview.widget.CardView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ListView;
+
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
     CardView cdView1, cdView2, cdView3;
@@ -22,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
 
         cdView1 = findViewById(R.id.cdmenu1);
         cdView2 = findViewById(R.id.cdmenu2);
+        cdView3 = findViewById(R.id.cdmenu3);
 
         cdView1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -35,6 +39,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent open = new Intent( MainActivity.this, KalkulatorActivity.class);
+                startActivity(open);
+
+            }
+        });
+        cdView3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent open = new Intent( MainActivity.this, ListViewActivity.class);
                 startActivity(open);
 
             }

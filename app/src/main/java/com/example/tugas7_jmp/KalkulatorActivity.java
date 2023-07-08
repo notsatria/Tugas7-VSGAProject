@@ -54,9 +54,9 @@ public class KalkulatorActivity extends AppCompatActivity {
                 int valueAngka1 = Integer.parseInt(angka1.getText().toString());
                 int valueAngka2 = Integer.parseInt(angka2.getText().toString());
 
-                int hasilTambah = valueAngka1 - valueAngka2;
+                int hasilKurang = valueAngka1 - valueAngka2;
 
-                hasil.setText(String.valueOf(hasilTambah));
+                hasil.setText(String.valueOf(hasilKurang));
 
             }
         });
@@ -66,21 +66,21 @@ public class KalkulatorActivity extends AppCompatActivity {
                 int valueAngka1 = Integer.parseInt(angka1.getText().toString());
                 int valueAngka2 = Integer.parseInt(angka2.getText().toString());
 
-                int hasilTambah = valueAngka1 * valueAngka2;
+                int hasilKali = valueAngka1 * valueAngka2;
 
-                hasil.setText(String.valueOf(hasilTambah));
+                hasil.setText(String.valueOf(hasilKali));
 
             }
         });
         bagi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                int valueAngka1 = Integer.parseInt(angka1.getText().toString());
-                int valueAngka2 = Integer.parseInt(angka2.getText().toString());
+                float valueAngka1 = Integer.parseInt(angka1.getText().toString());
+                float valueAngka2 = Integer.parseInt(angka2.getText().toString());
 
-                int hasilTambah = valueAngka1 / valueAngka2;
+                float hasilBagi = valueAngka1 / valueAngka2;
 
-                hasil.setText(String.valueOf(hasilTambah));
+                hasil.setText(String.valueOf(hasilBagi));
 
             }
         });
@@ -88,7 +88,6 @@ public class KalkulatorActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 hasil.setText("0.0");
-
             }
         });
     }

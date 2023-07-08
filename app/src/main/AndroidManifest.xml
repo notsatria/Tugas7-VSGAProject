@@ -30,9 +30,14 @@
         <activity
             android:name=".InputNamaActivity"
             android:label="Input Nama" />
+
         <activity
             android:name=".KalkulatorActivity"
             android:label="Kalkulator" />
+
+        <activity
+            android:name=".ListViewActivity"
+            android:label="ListView" />
 
     </application>
 
