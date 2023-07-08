@@ -30,6 +30,9 @@
         <activity
             android:name=".InputNamaActivity"
             android:label="Input Nama" />
+        <activity
+            android:name=".KalkulatorActivity"
+            android:label="Kalkulator" />
 
     </application>
 
