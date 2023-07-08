@@ -1,4 +1,7 @@
 package com.example.tugas7_jmp;
 
-public class KalkulatorActivity {
+import androidx.appcompat.app.AppCompatActivity;
+
+public class KalkulatorActivity extends AppCompatActivity {
+
 }
